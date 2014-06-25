@@ -1,18 +1,19 @@
 # Strings and Characters
 ---
-A string is an ordered collection of characters, such as `"hello, world"` or `"albatross"`. Swift strings are represented by the `String` type, which in turn represents a collection of values of `Character` type.
+字串是一組有序的字元集合，如`"hello, world"`或`"albatross"`。在Swift中以`String`型別來處理字串，其實`String`型別就是`Character`型別的集合。
 
-Swift’s `String` and `Character` types provide a fast, Unicode-compliant way to work with text in your code. The syntax for string creation and manipulation is lightweight and readable, with a similar syntax to C strings. String concatenation is as simple as adding together two strings with the `+` operator, and string mutability is managed by choosing between a constant or a variable, just like any other value in Swift.
+Swift的`String`與`Character`型別提供了快速且支援Unicode的方式來處理文字。無論是生成或操作字串上，語法輕量且易讀，且類似C語言字串。字串的連接就與字串相加一樣簡單(以`"+"`運算子)。而字串的可變性是由宣告為常數或變數時決定的，就與其他Swift賦值方式一樣。
 
-Despite this simplicity of syntax, Swift’s `String` type is a fast, modern string implementation. Every string is composed of encoding-independent Unicode characters, and provides support for accessing those characters in various Unicode representations.
+除了語法簡易，Swift的`String`型別也以快速且現代的方式來操作字串：每個字串都是編碼獨立(encoding-independent)的Unicode字元所組成，同時也支援了各種不同的Unicode轉換處理。
 
-Strings can also be used to insert constants, variables, literals, and expressions into longer strings, in a process known as string interpolation. This makes it easy to create custom string values for display, storage, and printing.
+字串也能夠透過"字串內插"的方式加入常數，變數，字母，符號等，讓字串顯示，儲存或列印變得更加容易。
 
+> 
 > **NOTE**
 > 
-> Swift’s `String` type is bridged seamlessly to Foundation’s `NSString` class. If you are working with the Foundation framework in Cocoa or Cocoa Touch, the entire `NSString` API is available to call on any `String` value you create, in addition to the String features described in this chapter. You can also use a `String` value with any API that requires an `NSString` instance.
+> Swift的`String`型別與Foundation中的`NSString`類別是無縫接軌的。若是你已經在Cocoa或Cocoa Touch中使用Foundation框架，你建立的`String`變數可以呼叫與使用`NSString`的API，同時還能使用本章節中介紹的`String`其他特性。你可以只使用`String`變數就能使用`NSString`的所有API。
 
-For more information about using `String` with Foundation and Cocoa, see Using *Swift with Cocoa and Objective-C*.
+更多`String`型別與Foundation和Cocoa相關的資訊在*Swift with Cocoa and Objective-C*中。
 
 ## String Literals
 
